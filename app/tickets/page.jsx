@@ -3,7 +3,7 @@ import React from "react";
 export default function Tickets() {
   return (
     <main>
-      <div>Tickets page</div>;
+      <h2>Tickets page</h2>
     </main>
   );
 }
