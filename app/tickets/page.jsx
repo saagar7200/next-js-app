@@ -4,7 +4,12 @@ import TicketList from "./TicketList";
 export default function Tickets() {
   return (
     <main>
-      <h2>Tickets page</h2>
+      <div>
+        <h2>Tickets</h2>
+        <p>
+          <small>Currently opened tickets</small>
+        </p>
+      </div>
       <TicketList />
     </main>
   );

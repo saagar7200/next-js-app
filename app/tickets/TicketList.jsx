@@ -1,11 +1,15 @@
 import React from "react";
 
 // here we can define another async function to fetch data and can called directly inside async functional component
-
+"client";
 async function getTickets() {
   const baseUrl = process.env.BASE_URL;
 
-  const response = await fetch(`${baseUrl}/tickets`);
+  const response = await fetch(`${baseUrl}/tickets`, {
+    next: {
+      revalidate: 0,
+    },
+  });
 
   return response.json();
 }
