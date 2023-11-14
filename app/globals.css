@@ -29,6 +29,7 @@ nav {
     my-10 mx-auto 
     max-w-5xl;
 }
+
 nav a, nav span {
   @apply text-gray-500;
 }
